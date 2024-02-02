@@ -8,7 +8,7 @@ Please note that the code and configurations provided in this guide are **not of
 
 ## Environment Setup
 
-Our Chef recipes have been meticulously tested within a CentOS 7 environment utilizing Docker to ensure compatibility and seamless execution. This guide assumes a basic understanding of Docker and CentOS 7 operations, tailored specifically for system administrators and DevOps professionals working with Starburst Enterprise.
+These Chef recipes have been tested within a CentOS 7 environment utilizing Docker to ensure compatibility and seamless execution.
 
 ## Recipes Overview
 
