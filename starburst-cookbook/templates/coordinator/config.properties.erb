@@ -1,0 +1,9 @@
+# Set by Chef
+
+coordinator=true
+node-scheduler.include-coordinator=false
+http-server.http.port=<%= node['starburst-cookbook']['coordinator_port'] %>
+http-server.log.path=<%= node['starburst-cookbook']['log_directory'] %>/http-request.log
+discovery.uri=http://<%= node['starburst-cookbook']['coordinator_hostname'] %>:<%= node['starburst-cookbook']['coordinator_port'] %>
+
+# Add user-specific properties below

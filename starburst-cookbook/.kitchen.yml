@@ -1,0 +1,22 @@
+---
+driver:
+  name: docker
+
+platforms:
+  - name: centos-7
+
+provisioner:
+  name: chef_zero
+  cookbook_path: ["../cookbooks"]
+
+suites:
+  - name: install
+    run_list:
+      - recipe[starburst-cookbook::install]
+    attributes:
+      java:
+        install_flavor: "openjdk"
+        jdk_version: "17"
+    verifier:
+      inspec_tests:
+        - test/integration/install

@@ -1,0 +1,8 @@
+# Set by Chef
+
+coordinator=false
+http-server.http.port=<%= @worker_port %>
+http-server.log.path=<%= @log_directory %>/http-request.log
+discovery.uri=http://<%= @coordinator_hostname %>:<%= @coordinator_port %>
+
+# Add user-specific properties below
